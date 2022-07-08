@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "banner_with_text": {
+      "type": "banner-with-text",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner_with_text"
+  ]
+}
