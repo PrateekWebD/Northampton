@@ -63,13 +63,40 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Banner With Text",
+    "settings": [],
+	"blocks": [
+		{
+			"name": "Banner",
+			"type": "banner",
+			"settings": [
+				{
+					"id": "heading",
+					"type": "text",
+					"label": "Heading"
+				},
+				{
+					"id": "content",
+					"type": "richtext",
+					"label": "Content"
+				},
+				{
+					"id": "image",
+					"type": "image_picker",
+					"label": "Banner Image"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Banner With Text",
+			"blocks": [
+				{
+					"type": "banner"
+				}
+			]
+		}
+		]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
