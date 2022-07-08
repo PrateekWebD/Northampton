@@ -3,7 +3,7 @@
         <i class="icon">
           <img src="images/phone1.svg" alt="img">
         </i>
-        <a href="#">{{ settings_phone }}</a>
+        <a href="tel:{{ section.settings.number }}">{{ section.settings.number }}</a>
       </div>
       <!-- /widget -->
 
@@ -12,9 +12,9 @@
     "name": "Widget",
     "settings": [
 		{
-			"id": "widget",
+			"id": "number",
 			"type": "text",
-			"label": "Text"
+			"label": "Phone"
 		}
 	]
   }
