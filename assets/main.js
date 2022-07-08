@@ -1,3 +1,4 @@
+jQuery(function($){
 $(document).ready(function () {
   if (/Edge\/\d./i.test(navigator.userAgent)) {
     jQuery('html').addClass('ie');
@@ -53,4 +54,5 @@ $("#scroll-down").click(function () {
   $('html, body').animate({
     scrollTop: $("#content").offset().top
   }, 400);
+});
 });
