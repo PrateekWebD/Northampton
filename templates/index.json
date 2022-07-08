@@ -2,6 +2,19 @@
   "sections": {
     "banner_with_text": {
       "type": "banner-with-text",
+      "blocks": {
+        "a6bc9a02-e785-4f29-bcc7-86dce74eabde": {
+          "type": "banner",
+          "settings": {
+            "heading": "H1",
+            "content": "<p>Hello Bro how are you<\/p>",
+            "image": "shopify:\/\/shop_images\/content-image2.png"
+          }
+        }
+      },
+      "block_order": [
+        "a6bc9a02-e785-4f29-bcc7-86dce74eabde"
+      ],
       "settings": {
       }
     }
