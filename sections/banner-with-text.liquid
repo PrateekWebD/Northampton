@@ -1,56 +1,27 @@
 <div id="banner">
         <div class="owl-carousel carousel1">
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="description bg-pattern1">
-                  <div class="inner-wrapper">
-                    <h1>Companionship with care</h1>
-                    <p>Supporting families with our bespoke companion service across Northamptonshire & beyond</p>
+          {% for block in section.settings.blocks %}
+          	{% case block.type %}
+          	  {% when 'banner' %}
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="description bg-pattern1">
+                        <div class="inner-wrapper">
+                          <h1>{{ block.settings.heading }}</h1>
+                          {{ block.settings.content }}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <figure class="figure1">
+                        <img src="{{ block.settings.image | image_url }}" class="w-100" alt="banner-image">
+                      </figure>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-7">
-                <figure class="figure1">
-                  <img src="images/banner-img1.jpg" class="w-100" alt="banner-image">
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="description bg-pattern1">
-                  <div class="inner-wrapper">
-                    <h2 class="h1">Companionship with care</h2>
-                    <p>Supporting families with our bespoke companion service across Northamptonshire & beyond</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <figure class="figure1">
-                  <img src="images/banner-img1.jpg" class="w-100" alt="banner-image">
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="description bg-pattern1">
-                  <div class="inner-wrapper">
-                    <h2 class="h1">Companionship with care</h2>
-                    <p>Supporting families with our bespoke companion service across Northamptonshire & beyond</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <figure class="figure1">
-                  <img src="images/banner-img1.jpg" class="w-100" alt="banner-image">
-                </figure>
-              </div>
-            </div>
-          </div>
+         	{% endcase %}
+          {% endfor %}
         </div>
         <button id="scroll-down">
           <i class="icon">
