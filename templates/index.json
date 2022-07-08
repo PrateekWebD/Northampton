@@ -23,10 +23,16 @@
       "settings": {
         "number": "98965522312"
       }
+    },
+    "about_us": {
+      "type": "about-us",
+      "settings": {
+      }
     }
   },
   "order": [
     "banner_with_text",
-    "widget"
+    "widget",
+    "about_us"
   ]
 }
