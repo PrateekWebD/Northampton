@@ -3,60 +3,20 @@
           <div class="container">
             <h2 class="text-white text-lg-center mb-5"> {{ section.settings.heading }} </h2>
             <ul class="list2">
-              <li>
-                <i class="icon">
-                  <img src="images/icon4.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Shopping</h3>
-                  <p>Help with your weekly food shop including packing, unpacking & transport</p>
-                </div>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon5.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Meal Preparation & Service</h3>
-                  <p>We can help with batch cooking along with preparation at meal times</p>
-                </div>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon6.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Housekeeping</h3>
-                  <p>We can assist with a variety of household chores to keep your home clean, tidy and safe</p>
-                </div>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon7.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Pop-in service for live in carers</h3>
-                  <p>Our companions can offer a new and friendly face as well as some respite for live in carers</p>
-                </div>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon8.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Administration</h3>
-                  <p>Our companions can help with a number of admin tasks including delivering post and paying bills</p>
-                </div>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon9.png" alt="img">
-                </i>
-                <div class="content-wrapper">
-                  <h3>Transport to Appointment & Activities</h3>
-                  <p>We can accompany you to hospital, doctors & dentist appointments as well as a variety of social activities</p>
-                </div>
-              </li>
+              {% for block in section.blocks %}
+              	{% case block.type %}
+              	  {% when 'service' %}
+                    <li>
+                      <i class="icon">
+                        <img src="{{ block.settings.service-image | image_url}}" alt="{{ block.settings.service-image.alt }}">
+                      </i>
+                      <div class="content-wrapper">
+                        <h3>{{ block.settings.service-heading }}</h3>
+                        {{ block.settings.service-content }}
+                      </div>
+                    </li>
+             	{% endcase %}
+              {% endfor %}
             </ul>
             <div class="box1 pulled-down">
               <div class="row">
@@ -89,18 +49,20 @@
             "settings": [
                 {
                     "type": "image_picker",
-                    "id": "image",
+                    "id": "service-image",
                     "label": "Image"
                 },
 				{
                     "type": "text",
-                    "id": "heading",
-                    "label": "Heading"
+                    "id": "service-heading",
+                    "label": "Heading",
+					"default": "Heading will go here"
                 },
 				{
                     "type": "richtext",
-                    "id": "content",
-                    "label": "Content"
+                    "id": "service-content",
+                    "label": "Content",
+					"default": "<p>Content will go here</p>"
                 }
             ]
 		}
