@@ -44,7 +44,40 @@
     },
     "about_us": {
       "type": "about-us",
+      "blocks": {
+        "bc51d627-e0df-4bcd-b15b-762728351b2c": {
+          "type": "point",
+          "settings": {
+            "point-image": "shopify:\/\/shop_images\/icon1.png",
+            "point-content": "Bespoke service tailored to you"
+          }
+        },
+        "6448887f-91fd-4fb2-beb6-9fd443a74fbf": {
+          "type": "point",
+          "settings": {
+            "point-image": "shopify:\/\/shop_images\/icon1.png",
+            "point-content": "Friendly & Reliable Team"
+          }
+        },
+        "7ae37494-050e-4067-ab90-b709a512afae": {
+          "type": "point",
+          "settings": {
+            "point-image": "shopify:\/\/shop_images\/icon1.png",
+            "point-content": "Travel across Northamptonshire"
+          }
+        }
+      },
+      "block_order": [
+        "bc51d627-e0df-4bcd-b15b-762728351b2c",
+        "6448887f-91fd-4fb2-beb6-9fd443a74fbf",
+        "7ae37494-050e-4067-ab90-b709a512afae"
+      ],
       "settings": {
+        "section-name": "About Us",
+        "heading": "Heading to go here",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+        "button-label": "Contact Us",
+        "button-url": "#Contact Us"
       }
     }
   },
