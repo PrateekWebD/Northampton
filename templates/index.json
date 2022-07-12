@@ -82,7 +82,60 @@
     },
     "our_services": {
       "type": "our-services",
+      "blocks": {
+        "31eb5ea8-a777-4419-bacc-331e86b120ce": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        },
+        "1467e757-82f3-414e-a055-effad1070463": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        },
+        "b67b37ec-6a87-4e7a-9b1a-5b940d188842": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        },
+        "90cff582-fc52-41a3-adae-f54c4382c3b7": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        },
+        "a275710a-7ea3-463f-9296-219d1c0444aa": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        },
+        "c06b9fd5-4407-493b-8973-f096dc7715bf": {
+          "type": "service",
+          "settings": {
+            "service-heading": "Heading will go here",
+            "service-content": "<p>Content will go here<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "31eb5ea8-a777-4419-bacc-331e86b120ce",
+        "1467e757-82f3-414e-a055-effad1070463",
+        "b67b37ec-6a87-4e7a-9b1a-5b940d188842",
+        "90cff582-fc52-41a3-adae-f54c4382c3b7",
+        "a275710a-7ea3-463f-9296-219d1c0444aa",
+        "c06b9fd5-4407-493b-8973-f096dc7715bf"
+      ],
       "settings": {
+        "heading": "Our Services"
       }
     }
   },
