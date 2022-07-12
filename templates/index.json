@@ -140,6 +140,18 @@
     },
     "16576219549f070ec0": {
       "type": "testimonials",
+      "blocks": {
+        "97dfd9dd-d25d-41e6-a031-1b37e75a77a2": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim sed elit feugiat egestas. Integer pretium nisi eget hendrerit feugiat. Fusce in scelerisque est. Sed commodo justo justo, non volutpat do<\/p>",
+            "name": "Nani"
+          }
+        }
+      },
+      "block_order": [
+        "97dfd9dd-d25d-41e6-a031-1b37e75a77a2"
+      ],
       "settings": {
       }
     }
