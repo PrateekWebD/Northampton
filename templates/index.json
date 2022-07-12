@@ -6,14 +6,32 @@
         "a6bc9a02-e785-4f29-bcc7-86dce74eabde": {
           "type": "banner",
           "settings": {
-            "heading": "H1",
-            "content": "<p>Hello Bro how are you<\/p>",
-            "image": "shopify:\/\/shop_images\/content-image2.png"
+            "heading": "Companionship with care",
+            "content": "<p>Supporting families with our bespoke companion service across Northamptonshire & beyond<\/p>",
+            "image": "shopify:\/\/shop_images\/banner-img1_6bd56a30-9e38-4e56-af26-67cfbf1f53bc.jpg"
+          }
+        },
+        "5c5726e3-0418-4c99-a9c2-d802a1cbe6fc": {
+          "type": "banner",
+          "settings": {
+            "heading": "Companionship with care",
+            "content": "<p>Supporting families with our bespoke companion service across Northamptonshire & beyond<\/p>",
+            "image": "shopify:\/\/shop_images\/banner-img1_6bd56a30-9e38-4e56-af26-67cfbf1f53bc.jpg"
+          }
+        },
+        "cfa13e05-d172-4e93-b691-b50553da3021": {
+          "type": "banner",
+          "settings": {
+            "heading": "Companionship with care",
+            "content": "<p>Supporting families with our bespoke companion service across Northamptonshire & beyond<\/p>",
+            "image": "shopify:\/\/shop_images\/banner-img1_6bd56a30-9e38-4e56-af26-67cfbf1f53bc.jpg"
           }
         }
       },
       "block_order": [
-        "a6bc9a02-e785-4f29-bcc7-86dce74eabde"
+        "a6bc9a02-e785-4f29-bcc7-86dce74eabde",
+        "5c5726e3-0418-4c99-a9c2-d802a1cbe6fc",
+        "cfa13e05-d172-4e93-b691-b50553da3021"
       ],
       "settings": {
       }
