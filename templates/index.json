@@ -79,11 +79,17 @@
         "button-label": "Contact Us",
         "button-url": "#Contact Us"
       }
+    },
+    "our_services": {
+      "type": "our-services",
+      "settings": {
+      }
     }
   },
   "order": [
     "banner_with_text",
     "widget",
-    "about_us"
+    "about_us",
+    "our_services"
   ]
 }
