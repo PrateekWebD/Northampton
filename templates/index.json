@@ -137,46 +137,12 @@
       "settings": {
         "heading": "Our Services"
       }
-    },
-    "16576219549f070ec0": {
-      "type": "testimonials",
-      "blocks": {
-        "97dfd9dd-d25d-41e6-a031-1b37e75a77a2": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim sed elit feugiat egestas. Integer pretium nisi eget hendrerit feugiat. Fusce in scelerisque est. Sed commodo justo justo, non volutpat do<\/p>",
-            "name": "Nani"
-          }
-        },
-        "42316e9f-8605-40ef-aeb4-5a6ee2d08435": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>asdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd<\/p>",
-            "name": "asdfadf"
-          }
-        },
-        "4057164d-edc8-4bc3-b346-e57096a1f0c4": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>dsdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss<\/p>",
-            "name": "askdfk"
-          }
-        }
-      },
-      "block_order": [
-        "97dfd9dd-d25d-41e6-a031-1b37e75a77a2",
-        "42316e9f-8605-40ef-aeb4-5a6ee2d08435",
-        "4057164d-edc8-4bc3-b346-e57096a1f0c4"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "banner_with_text",
     "widget",
     "about_us",
-    "our_services",
-    "16576219549f070ec0"
+    "our_services"
   ]
 }
