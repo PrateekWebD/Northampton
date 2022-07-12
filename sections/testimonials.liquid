@@ -2,45 +2,24 @@
         <div class="section">
           <div class="container">
             <div class="owl-carousel carousel2">
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-8 mx-auto">
-                    <i class="icon">
-                      <img src="images/icon13.svg" alt="img">
-                    </i>
-                    <blockquote>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                      <cite>Name to go here</cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-8 mx-auto">
-                    <i class="icon">
-                      <img src="images/icon13.svg" alt="img">
-                    </i>
-                    <blockquote>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                      <cite>Name to go here</cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-8 mx-auto">
-                    <i class="icon">
-                      <img src="images/icon13.svg" alt="img">
-                    </i>
-                    <blockquote>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                      <cite>Name to go here</cite>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'testimonials' %}
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-md-8 mx-auto">
+                          <i class="icon">
+                            <img src="{{ 'icon13.svg' | asset_url }}" alt="img">
+                          </i>
+                          <blockquote>
+                            {{ block.settings.content }}
+                            <cite>{{ block.settings.name }}</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+              	{% endcase %}
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -50,6 +29,24 @@
   {
     "name": "Testimonials",
     "settings": [],
+	"blocks": [
+		{
+			"name": "Testimonial",
+			"type": "testimonial",
+			"settings": [
+				{
+					"type": "richtext",
+					"id": "content",
+					"label": "Content"
+				},
+				{
+					"type": "text",
+					"id": "name",
+					"label": "Person Name"
+				}
+			]
+		}
+	],
 	"presets": [
 		{
 			"name": "Testimonials"
