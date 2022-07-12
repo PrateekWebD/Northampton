@@ -20,24 +20,16 @@
               </div>
             </div>
             <ul class="list1">
-              <li>
-                <i class="icon">
-                  <img src="images/icon1.png" alt="img">
-                </i>
-                <span>Bespoke service tailored to you</span>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon2.png" alt="img">
-                </i>
-                <span>Friendly & Reliable Team</span>
-              </li>
-              <li>
-                <i class="icon">
-                  <img src="images/icon3.svg" alt="img">
-                </i>
-                <span>Travel across Northamptonshire</span>
-              </li>
+              {% for block in section.blocks %}
+              	{% case block.type %}
+              		{% when 'point' %}
+                      <li>
+                        <i class="icon">
+                          <img src="{{ block.settings.point-image | image_url }}" alt="img">
+                        </i>
+                        <span>{{ block.settings.point-content }}</span>
+             	{% endcase %}
+			  {% endfor %}
             </ul>
           </div>
         </div>
@@ -86,7 +78,7 @@
 			"settings": [
 				{
                    "type": "image_picker",
-                   "id": "image",
+                   "id": "point-image",
                    "label": "Image"
                 },
 				{
