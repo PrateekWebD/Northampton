@@ -137,18 +137,12 @@
       "settings": {
         "heading": "Our Services"
       }
-    },
-    "testimonials": {
-      "type": "testimonials",
-      "settings": {
-      }
     }
   },
   "order": [
     "banner_with_text",
     "widget",
     "about_us",
-    "our_services",
-    "testimonials"
+    "our_services"
   ]
 }
